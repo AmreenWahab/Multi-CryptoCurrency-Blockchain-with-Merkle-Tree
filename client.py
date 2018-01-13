@@ -6,18 +6,12 @@ import token_pb2, token_pb2_grpc
 def get_rendezvous_node(nodes, key):
     """
     Find the highest hash value via hash(node+key) of Rendezvous hashing and the node that generates the highest
-    hash value among all nodes. You MUST use hashlib to hash the node '0.0.0.0:3000' and key combination.
-        Example: 
-        x = '0.0.0.0:3000' + 'key'
-        x = node + key
-        hash = hashlib.md5(x).hexdigest()
-        Use utf-8 encoding if needed.
-        @https://docs.python.org/2/library/hashlib.html
+    hash value among all nodes. Use hashlib to hash the node '0.0.0.0:3000' and key combination.
     :param nodes: a list of servers.
     :param key: a string key name.
     :return the highest node.
     """
-    # TODO
+    
 
     highest_node = None
     val=-1
