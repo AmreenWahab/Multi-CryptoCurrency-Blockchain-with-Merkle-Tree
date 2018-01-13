@@ -39,7 +39,8 @@ class Coin():
         # check if the from_wallet is valid
         # check if the to_wallet is valid
         # check the from_wallet has sufficient amount
-        # TODO
+         # Move value amount from "from_wallet" to "to_wallet"
+     
 
         wallet_keys=list(self.wallets)
         print(wallet_keys)
@@ -58,7 +59,7 @@ class Coin():
 
 
 
-        # Move value amount from "from_wallet" to "to_wallet"
+       
 
         return True
 
@@ -90,18 +91,18 @@ class Coin():
 
     def compute_merkle_root(self, children):
         """
-        Compute a Merkle root hash using the given list of transactions. You need to recursively build up 
+        Generating a Merkle root hash using the given list of transactions. You need to recursively build up 
         a (binary) tree to get to the root and then return the root.
         @see - http://orm-chimera-prod.s3.amazonaws.com/1234000001802/images/msbt_0702.png
         The calling code add_txn_to_blockchain() guarantees that the children list contains even number of transaction hash only.
-        You must use hashlib's sha256 function. 
+        
         Example: hashlib.sha256( (x).encode('utf-8') ).hexdigest()
 
         :params children: a list of transaction hash in order. ['xxxxxx', 'yyyyyy', 'zzzzzz', 'aaaaaaa']
         :return a Merkle root hash
         """
-        # TODO
-        #print(self.wallets)
+ 
+     
 
 
         listoftransaction = children
